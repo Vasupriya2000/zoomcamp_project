@@ -1,3 +1,4 @@
 https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews
 
-The above is the link for the dataset.Data is cleaned with python and then loaded into the data warehouse
+The above is the link for the dataset. Due to its large size (around 4 GB) ,couldnt upload it to github .Data is cleaned with python 
+and then loaded into GCS datalake and then to the Bigquery (data warehouse) using kestra 
