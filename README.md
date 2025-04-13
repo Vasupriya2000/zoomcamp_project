@@ -80,7 +80,7 @@ The dataset contains feedback about 3 million users on 212404 unique books .This
 
 * Setup kestra to perform data ingestion with the docker-compose file .It also has pgadmin,postgres in the container that I have created.  
 * Create a google VM, and set up the private and public keys to remotely connect to the instance.  
-* After cloning the repo from "https://github.com/Vasupriya2000/VasuZoomcamp2025.git", sftp the top level folder and its contents into the instance.  
+* After cloning the repo from "(https://github.com/Vasupriya2000/zoomcamp_project.git)", sftp the top level folder and its contents into the instance.  
 * Go to de-zoomcamp-final-project and update the values shown below in the docker-compose file to match your environment
 
 ![2](https://github.com/user-attachments/assets/8f466a18-6f69-449e-985b-aac7878738b5)
