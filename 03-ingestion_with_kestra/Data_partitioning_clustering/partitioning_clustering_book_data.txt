@@ -1,0 +1,8 @@
+CREATE OR REPLACE TABLE superb-system-451221-c4.project_data.Books_rating_mod_parti_clus
+CLUSTER BY Title,profileName,review_summary AS
+SELECT * FROM superb-system-451221-c4.project_data.Books_rating_modified;
+
+CREATE OR REPLACE TABLE superb-system-451221-c4.project_data.Books_data_mod_parti_clus1
+PARTITION BY DATE_TRUNC(published_date,YEAR)
+CLUSTER BY Title,authors,categories AS
+SELECT * FROM superb-system-451221-c4.project_data.Books_data_modified;

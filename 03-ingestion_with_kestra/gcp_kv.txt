@@ -1,0 +1,45 @@
+id: 04_gcp_kv
+namespace: zoomcamp
+
+tasks:
+  - id: gcp_creds
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_CREDS
+    kvType: JSON
+    value: |
+      {
+      "type": "service_account",
+      "project_id": "superb-system-451221-c4",
+      "private_key_id": "61766bf495b59e1dfee5b995030c07e73b49eabe",
+       "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCqDeUtGQWY+yp3\n7juqLQ/6EDNTxqMSenfndP/ZdCgVgKiIrneZ2dMnughjdfD/nFrYZ28odcZNkuZR\n+myBOf7u4vQBolHXGzYY/88drH4ygzMSOEg8MEzIQo+9LEPheXP22kMKhW6zQZUh\n7MIBOBFlCa2pyn/C9QYtWWIz1Sv0jXDUXmKLaV2kpT6BQGnS86Z34aAm3T4+dC3S\nXrvZ+t97ErX5SKqJxpU3IlhK2xd7sxxApezb6jYzQxYGwk49NPTFA6cpCMMApG4n\n059FanZjGlBbmWkGmO94r4sS96kV6ROQ5r+7dJerKPmhywWNSTr75qs057QCwRPR\npwWMHXj5AgMBAAECggEAICQTsIgl63HvZy8HJmUxe5tDxD4LNNMiZgQSVmSSreu9\nDuZg0xqdQwkxjDDuvbUs43F7TDukYSWWdCCfkPYn9bk+Eq/+BWjOev+ggxSG3p+3\nD6bFGmErpf8UoVXkN5HHxfyfRrYNBALtf7W6vlW9Teo8IVcVekDq67fU7ISKNASX\nwzbkaW3XqiXBVKigwYhGBohXq9wVGUCAzKNc0cCdK2n3bhXUmhklI5wTaZjd/iTX\nypFuJdsYYJbe6rMaVXy5G3O7U3sg8gaIY7sfAvFsdupeuQbdIO0vGJ9GtRg5O3V9\nOL3Pz/kFd9Nj+hdvrm6t0Ul7l/nJt5FObswxWbLmDQKBgQDZJ/Pp+SUpt4K5dARl\ngKlF6Tv3k5XNapP1fd4HRu/YkSsPxNOWri4/W0UUKzJfqlWIunsF4x0D1+6oFy4R\nF7+mtQoETIGgVsh2ml14cOY9qlGIsPhaKz1l56X6Tvx2uDwQ2Zxbv8uYJGGloyER\nk/v3GibQG5ef3ZDH2dP4H0xflQKBgQDIeQynkoZQvzq4thTepZwkCYWS1EW18Tyb\nUsIY7/Q84WXCQnbfKwo+QGfxX6Tsek2QzuVuE/1M0T3cVWqf6ckZK9p5fIOSYzAk\nKu91Trkm/MsU3F5ExDwbcKI+PR5ZopS9BXFuDBq4jEjBcZdPiaEWGsZFNJNKLXck\n4QVL73Wq1QKBgQCFCw1NU++I132n0YTAC0uqIXM0A5/L8ngj97GIE9XugUI4rwZT\nUvPSrUBtUunR4rH0ywuEV9j2+dyl702x+zLYGCLC73ybl4/J2llZ6RGmxiqd7I67\n77H2NS5jZPEYa1ehmzFIpQE/fUq2CHPCKUA97C/LYJxMvZpuVu6fHc3U4QKBgB+v\n+o8WOwLSZz7BESVsOfT8SE/AG9C5c+H9P87fRtTEr+f3x4BY9kKGvadKffAfGNmV\nynAO2s/klwmXusXSF0ZSRzNCui1OXlKpMrZxHhUKijMe7guilPmlYQ/Da2Oxrh7+\nmEJTyXl4OxvQj6Ez2PF8g/B2cf2cmCONKeAp1oiNAoGBAJ5axKM0lMofnNwwU9gb\nLTXmdPt+zdh20IFk//1GAJ6yRYhLcCAw5tQwAA+aIf6WBCvDK+yiF+MIS38sQPWM\nZVRhFYHVxVSdnwOKS8mDUWwbKeVRm75074CccM8yi3uAeS4ifro1TG2DCOlYn+Xw\nzVs0ucKLiuY5A4SOmQUN6roq\n-----END PRIVATE KEY-----\n",
+      "client_email": "kestra-zoomcamp@superb-system-451221-c4.iam.gserviceaccount.com",
+      "client_id": "107827604767314735357",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kestra-zoomcamp%40superb-system-451221-c4.iam.gserviceaccount.com",
+       "universe_domain": "googleapis.com"
+       }
+  - id: gcp_project_id
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_PROJECT_ID
+    kvType: STRING
+    value: superb-system-451221-c4 # TODO replace with your project id
+
+  - id: gcp_location
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_LOCATION
+    kvType: STRING
+    value: europe-west2
+
+  - id: gcp_bucket_name
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_BUCKET_NAME
+    kvType: STRING
+    value: vasabhi-kestra-bucket # TODO make sure it's globally unique!
+
+  - id: gcp_dataset
+    type: io.kestra.plugin.core.kv.Set
+    key:  GCP_DATASET
+    kvType: STRING
+    value: de_zoomcamp

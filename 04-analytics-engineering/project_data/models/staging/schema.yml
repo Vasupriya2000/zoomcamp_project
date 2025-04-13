@@ -1,0 +1,53 @@
+version: 2
+
+sources:
+  - name: staging
+    database: "{{ env_var('DBT_DATABASE', 'superb-system-451221-c4') }}"
+    schema: "{{ env_var('DBT_SCHEMA', 'project_data') }}"
+    tables:
+      - name: Books_data_mod_parti_clus1
+      - name: Books_rating_mod_parti_clus
+        # freshness:
+        #   error_after: {count: 6, period: hour}
+
+models:
+  - name: stg_book_details
+    description: >
+      Unioned data for the analysis
+    columns:
+      - name: title
+        description: Title of the book
+      - name: description
+        description: Description of the book
+      - name: authors
+        description: Authors of the book
+      - name: Price
+        description: Price of the book
+      - name: User_id
+        description: User_id of the reviewer
+      - name: Profile_name
+        description: Name of the reviewer
+      - name: review_helpfulness
+        description: Helpfulness rating of the review
+      - name: review_score
+        description: Review score of the book.
+      - name: review_summary
+        description: Summary of the review.
+      - name: review_text
+        description: Full text of the review.
+      - name: image
+        description: Image of the book cover
+      - name: preview_link
+        description: Preview link of the book
+      - name: publisher
+        description: The publisher of the book
+      - name: published_date
+        description: The publish date of the book
+      - name: published_year
+        description: Publish year of the book
+      - name: info_link
+        description: Link to get more information about the book
+      - name: categories
+        description: Genre of the book.
+      - name: ratings_count
+        description: Average rating of the book.

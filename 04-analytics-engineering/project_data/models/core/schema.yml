@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: book_analysis
+    description: >
+      Aggregated analysis at the book level including review stats and popularity bands.
+    columns:
+      - name: title
+        description: Title of the book.
+        tests:
+          - not_null
+          - unique
+      - name: description
+        description: Short description of the book.
+      - name: authors
+        description: Author(s) of the book.
+      - name: image
+        description: Image URL of the book cover.
+      - name: previewlink
+        description: Link to preview the book.
+      - name: publisher
+        description: Publisher of the book.
+      - name: infolink
+        description: More info link for the book.
+      - name: categories
+        description: Categories/genres of the book.
+      - name: ratingscount
+        description: Number of people who rated the book.
+      - name: published_date
+        description: Date the book was published.
+      - name: published_year
+        description: Year the book was published.
+      - name: avg_review_score
+        description: Average score given by reviewers.
+      - name: review_count
+        description: Total number of reviews.
+      - name: popularity_band
+        description: Popularity bucket (High, Medium, Low) based on ratingscount.
