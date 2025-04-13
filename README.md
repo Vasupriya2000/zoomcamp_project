@@ -117,6 +117,7 @@ This will create the necessary gcs and bigquery instances.
 
 ![8](https://github.com/user-attachments/assets/2f135891-30fc-4e78-a2e8-31e795efbb62)
 
+The below is the scheduled job to load data in production on a daily basis
 ![9](https://github.com/user-attachments/assets/e65d2fee-b26b-4896-b903-70c46dbf4525)
 
 ![10](https://github.com/user-attachments/assets/7a7c3a01-77ff-45c0-9920-2a40d43edf5a)
