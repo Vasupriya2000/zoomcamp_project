@@ -4,22 +4,28 @@
 
 ## **Project Summary:**
 
-This project focuses on building an automated **ETL pipeline** to process and analyze over **3 million Amazon book reviews**, covering more than **212,404 unique books**. The goal is to transform raw review data into actionable insights that highlight:
+This project focuses on building an automated **ETL pipeline** to process and analyze over **3 million Amazon book reviews**, covering **212,404 unique books**. The goal is to transform raw review data into actionable insights that highlight:
 
 * The **top-rated books** as reviewed by readers.
 
 * The **most frequently recommended** or suggested books.
 
-* How **book publishing** and **reviewing patterns** have evolved from **1996 to 2025**.
+* How **book publishing** and **reviewing patterns** have evolved 
 
 By leveraging a modern data stack—
 
 **Docker** for containerization,
+
 **Terraform** for infrastructure provisioning,
+
 **Kestra** for orchestration (Batch processing)
+
 , Data loaded to **Google data lake ,
+
 Bigquery** for Datawarehousing ,**data partitioned and clustered**, 
+
 **dbt** for transformation, and 
+
 **Looker Studio** for visualization
 
 the project ensures a scalable and reproducible pipeline from data ingestion to dashboarding.
@@ -34,7 +40,7 @@ the project ensures a scalable and reproducible pipeline from data ingestion to 
 
 ## **Problem Description**
 
-With the explosive growth of online reviews, platforms like Amazon have become treasure troves of consumer feedback. The **Amazon Book Reviews dataset**, spanning from **1996 to 2025**, offers deep insight into how readers engage with books over nearly three decades.
+With the explosive growth of online reviews, platforms like Amazon have become treasure troves of consumer feedback. The **Amazon Book Reviews dataset**,  offers deep insight into how readers engage with books over nearly three decades.
 
 But with **millions of reviews** and **thousands of authors**, key questions emerge:
 
@@ -52,8 +58,7 @@ Ultimately, this project turns messy review data into **actionable insights** ab
 
 [https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews](https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews)
 
-The dataset contains feedback about 3 million users on 212404 unique books .This contains product reviews and metadata from Amazon, spanning May 1996 \- July 2025\.
-
+The dataset contains feedback about 3 million users on 212404 unique books .This contains product reviews and metadata from Amazon.
 ## **Technologies used:**
 
 * GCP VM Instance (Processing)  
