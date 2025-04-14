@@ -12,7 +12,17 @@ This project focuses on building an automated **ETL pipeline** to process and an
 
 * How **book publishing** and **reviewing patterns** have evolved from **1996 to 2025**.
 
-By leveraging a modern data stack—**Docker** for containerization, **Terraform** for infrastructure provisioning, **Kestra** for orchestration, Data loaded to **Google data lake ,Bigquery** for Datawarehousing ,**data partitioned and clustered**,  **dbt** for transformation, and **Looker Studio** for visualization—the project ensures a scalable and reproducible pipeline from data ingestion to dashboarding.
+By leveraging a modern data stack—
+
+**Docker** for containerization,
+**Terraform** for infrastructure provisioning,
+**Kestra** for orchestration (Batch processing)
+, Data loaded to **Google data lake ,
+Bigquery** for Datawarehousing ,**data partitioned and clustered**, 
+**dbt** for transformation, and 
+**Looker Studio** for visualization
+
+the project ensures a scalable and reproducible pipeline from data ingestion to dashboarding.
 
 **Data Visualizations:**
 ![vis1](https://github.com/user-attachments/assets/3b51b131-116c-4f69-ad2c-802ddddcc3e8)
