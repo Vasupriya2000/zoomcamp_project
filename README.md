@@ -14,17 +14,19 @@ This project focuses on building an automated **ETL pipeline** to process and an
 
 By leveraging a modern data stack—
 
-**Docker** for containerization,
+**Docker** for containerization
 
-**Terraform** for infrastructure provisioning,
+**Terraform** for infrastructure provisioning
 
 **Kestra** for orchestration (Batch processing)
 
-, Data loaded to **Google data lake ,
+Data loaded to **Google data lake**
 
-Bigquery** for Datawarehousing ,**data partitioned and clustered**, 
+**Bigquery** for Datawarehousing 
 
-**dbt** for transformation, and 
+**data partitioned and clustered**
+
+**dbt** for transformation and 
 
 **Looker Studio** for visualization
 
