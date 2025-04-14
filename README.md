@@ -14,22 +14,21 @@ This project focuses on building an automated **ETL pipeline** to process and an
 
 By leveraging a modern data stack—
 
-            **Docker** for containerization
+Docker – Used for containerization to ensure consistency across environments.
 
-            **Terraform** for infrastructure provisioning
+Terraform – Manages infrastructure provisioning as code (IaC).
 
-            **Kestra** for orchestration (Batch processing)
+Kestra – Orchestrates batch data processing workflows.
 
-            Data loaded to **Google data lake**
+Google Cloud Storage (Data Lake) – Stores raw and semi-processed data.
 
-           **Bigquery** for Datawarehousing 
+BigQuery – Serves as the data warehouse for analytics.
 
-           **data partitioned and clustered**
+Partitioned and Clustered Tables – Optimizes BigQuery performance and cost.
 
-           **dbt** for transformation and 
+dbt (Data Build Tool) – Handles data transformation within BigQuery using modular SQL models.
 
-           **Looker Studio** for visualization
-
+Looker Studio – Provides data visualization and reporting connected to BigQuery.       
 the project ensures a scalable and reproducible pipeline from data ingestion to dashboarding.
 
 **Data Visualizations:**
